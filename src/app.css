@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --rich-black: rgb(3, 13, 24);
+    --oxford-blue: rgb(12, 21, 37);
+    --yinmn-blue: #415a77ff;
+    --silver-lake-blue: #778da9ff;
+    --platinum: #e0e1ddff;
+
+    --white: #ffffffff;
+    --rich-black-2: #00171fff;
+    --prussian-blue: #003459ff;
+    --cerulean: #007ea7ff;
+    --picton-blue: #00a8e8ff;
+
+    --black-alpha: rgba(3, 15, 29, 0.7);
+
+    --accent-dark: #000d8a;
+    --black: 15, 18, 25;
+    --gray: 96, 115, 159;
+    --gray-light: 229, 233, 240;
+    --gray-dark: 34, 41, 57;
+    --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+        0 16px 32px rgba(var(--gray), 33%);
+
+    --rounding: 8px;
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('/fonts/atkinson-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson';
+    src: url('/fonts/atkinson-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/fonts/Inter-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url("/fonts/IBMPlexMono-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url("/fonts/IBMPlexMono-Bold.ttf");
+    font-weight: bold;
+}
+
+
+body {
+    background-color: var(--oxford-blue);
+
+}
+
+body,
+html {
+    /* Navbar height */
+    scroll-padding-top: 60px;
+}
+
+main {
+    width: 960px !important;
+}
+
+nav {
+    background-color: var(--cerulean);
+}
+
+.no-x-scroll {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+a {
+    color: var(--picton-blue) !important;
+
+}
+
+a:visited {
+    color: var(--cerulean) !important;
+}
+
+hr {
+    color: var(--platinum);
+    margin-bottom: 2em;
+}
+
+.date {
+    color: var(--silver-lake-blue);
+    font-family: IBM Plex Mono;
+    font-weight: bold;
+}

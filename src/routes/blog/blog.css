@@ -1,0 +1,15 @@
+.title {
+    color: var(--picton-blue) !important;
+}
+
+h1 {
+    color: white !important;
+}
+
+strong {
+    color: white !important;
+}
+
+article {
+    background: var(--black-alpha) !important;
+}
