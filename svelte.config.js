@@ -20,9 +20,9 @@ const config = {
             precompress: false,
             strict: true,
         }),
-        paths: {
-            base: process.env.BASE_PATH,
-        },
+        // paths: {
+        //     base: process.env.BASE_PATH,
+        // },
         prerender: {
             handleMissingId: ({ event, resolve }) => {
                 return;
