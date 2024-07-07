@@ -1,0 +1,18 @@
+{
+	"/": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"/blog": [
+		"src/routes/blog/+page.server.ts",
+		"src/routes/+layout.js"
+	],
+	"/blog/[slug]": [
+		"src/routes/blog/[slug]/+page.ts",
+		"src/routes/+layout.js"
+	],
+	"/projects": [
+		"src/routes/projects/+page.ts",
+		"src/routes/+layout.js"
+	]
+}
