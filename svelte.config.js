@@ -22,9 +22,6 @@ const config = {
             precompress: false,
             strict: true
         }),
-        paths: {
-            base: process.env.NODE_ENV === "production" ? "/dch-gh.github.io" : "",
-        },
         prerender: {
             handleMissingId: ({ event, resolve }) => {
                 return;

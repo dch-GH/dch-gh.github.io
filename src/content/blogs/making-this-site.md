@@ -63,7 +63,7 @@ So today (July 5th 2024) I'm finishing up the website **again** after spending t
 as usual with a lot of frameworks leave a lot desired in my opinion. The verdict is that I think if you need something that can scale a bit in the range of "relatively simple needs", Astro can definitely work for you.
 
 # Why?
-The driving motivation this time around is mostly to have my own devblogs. I **love** devblogs. I've read *every* [Factorio Blog]("https://www.factorio.com/blog/"), some of them multiple times out of desperation since nothing else comes close. 
+The driving motivation this time around is mostly to have my own devblogs. I **love** devblogs. I've read *every* [Factorio Blog](https://factorio.com/blog/), some of them multiple times out of desperation since nothing else comes close. 
 Another one I've enjoyed is [Clark Kromenaker](http://clarkkromenaker.com/)'s. He's re-implenting this engine for a heavily data-oriented game called Gabriel Knight 3. It's really satisfying.
 I obviously can't list all the ones I've read, but it got to the point where I was wishing there were a good aggregator specifically for devblogs. Reddit seems like the obvious answer to this, but I tried that. Maybe I didn't look hard enough.
 
