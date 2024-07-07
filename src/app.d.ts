@@ -21,6 +21,15 @@ declare global {
             description: string;
             thumbnail: string;
             date: string;
+            editDate: string?;
+        }
+
+        interface Project {
+            title: string,
+            description: string,
+            date: string,
+            link: string?,
+            image: string?
         }
     }
 }

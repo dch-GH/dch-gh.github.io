@@ -72,17 +72,12 @@
 
 body {
     background-color: var(--oxford-blue);
-
 }
 
 body,
 html {
     /* Navbar height */
     scroll-padding-top: 60px;
-}
-
-main {
-    width: 960px !important;
 }
 
 nav {
@@ -92,22 +87,24 @@ nav {
 .no-x-scroll {
     max-width: 100%;
     overflow-x: hidden;
-
 }
 
-a {
+a:hover {
     color: var(--picton-blue) !important;
-
-}
-
-a:visited {
-    color: var(--cerulean) !important;
 }
 
 hr {
-    color: var(--platinum);
+    color: var(--cerulean);
     margin-bottom: 2em;
 }
+
+/* .vr {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 2px;
+    height: 1.5em;
+    background-color: var(--picton-blue);
+} */
 
 .date {
     color: var(--silver-lake-blue);

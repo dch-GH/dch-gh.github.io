@@ -1,26 +1,19 @@
+<!-- Blogpost page -->
+
 <script lang="ts">
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
-<!-- <div class="w-fullbg-fixed fixed h-full" style="z-index: -1">
-	{#if data.blogPost.thumbnail}
-		<img
-			class="absolute h-screen w-screen bg-fixed object-cover"
-			src={data.blogPost.thumbnail}
-			alt="background"
-		/>
-	{/if}
-	<div class="h-screen w-screen bg-pixel-dark mix-blend-multiply" />
-	<div class="background-fade absolute top-0 flex h-screen w-screen justify-center" />
-
-</div> -->
-
-<main class="md:px-10 container mx-auto h-full">
-	<div class="md:px-18 container mx-auto flex flex-col pt-12 pb-12 font-inter">
-		<p class="title mb-5 text-7xl font-bold sm:px-0">{data.blogPost.title}</p>
-		<p class="date mb-5 text-3xl">
+<!-- Outer container -->
+<div class="md:px-18 container mx-auto flex flex-col pt-16 font-inter lg:px-32 xl:px-64">
+	<!-- Blogpost inner -->
+	<div class="mb-10 text-white text-shadow pt-0 px-2 sm:px-5 md:px-10 flex flex-col">
+		<p class="text-pictonblue mb-5 text-5xl md:text-7xl sm:text-5xl font-bold sm:px-0">
+			{data.blogPost.title}
+		</p>
+		<p class="date mb-5 md:text-4xl sm:text-3xl text-2xl">
 			{new Date(data.blogPost.date).toLocaleString('en-us', {
 				month: 'short',
 				day: 'numeric',
@@ -29,8 +22,22 @@
 		</p>
 
 		<hr />
-		<article class="prose rounded-t p-5 font-inter text-white">
+		<article
+			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-blackalpha text-platinum max-w-full"
+		>
+			{#if data.blogPost.editDate}
+				<div class="flex flex-row justify-items-center">
+					<p class="text-pictonblue italic font-inter font-bold mr-1">Last edited on:</p>
+					<p class="date my-auto italic">
+						{new Date(data.blogPost.editDate).toLocaleString('en-us', {
+							month: 'short',
+							day: 'numeric',
+							year: 'numeric'
+						})}
+					</p>
+				</div>
+			{/if}
 			<svelte:component this={data.content} />
 		</article>
 	</div>
-</main>
+</div>

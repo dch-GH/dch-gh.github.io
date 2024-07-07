@@ -5,6 +5,7 @@ export default {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     theme: {
         colors: {
+            transparent: 'transparent',
             white: '#FFFFFF',
             transparentblue: '#2447f779',
             blue: '#2446f7',
@@ -13,9 +14,20 @@ export default {
             navyblue: '#0f2898',
             gray: '#e2e2e2',
             lightblue: '#0092ff',
-            transparent: 'transparent'
+            yinmnblue: '#415a77ff',
+
+            blackalpha: 'rgba(3, 15, 29, 0.7)',
+            richblack2: '#00171fff',
+            prussianblue: '#003459ff',
+            silverlakeblue: '#778da9ff',
+            cerulean: '#007ea7ff',
+            platinum: '#e0e1ddff',
+            pictonblue: '#00a8e8ff',
         },
         extend: {
+            borderRadius: {
+                '*': '8px',
+            },
             fontFamily: {
                 inter: ['Inter', 'sans-serif'],
                 ibmplexmono: ['IBM Plex Mono', 'sans-serif'],
@@ -67,13 +79,15 @@ export default {
                 scroll: 'scrolling 120s infinite linear',
                 wiggle: 'wiggle 1s ease-in-out infinite'
             },
-            typography: {
-                DEFAULT: {
+            typography: ({ theme }) => ({
+                maincolors: {
                     css: {
-                        maxWidth: '100%'
+                        '--tw-prose-headings': theme('colors.white'),
+                        '--tw-prose-bold': theme('colors.cerulean'),
+                        '--tw-prose-links': theme('colors.pictonblue'),
                     }
                 }
-            }
+            })
         }
     },
     plugins: [
