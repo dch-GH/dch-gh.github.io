@@ -19,10 +19,12 @@ const config = {
             // these options are set automatically — see below
             pages: 'build',
             assets: 'build',
-            fallback: '404.html',
             precompress: false,
             strict: true
         }),
+        paths: {
+            base: process.env.NODE_ENV === "production" ? "/dch-gh.github.io" : "",
+        },
         prerender: {
             handleMissingId: ({ event, resolve }) => {
                 return;
