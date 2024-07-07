@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex gap-3 ml-0 mb-2 text-pictonblue">
-	<a href="https://github.com/dch-GH" target="_blank">
+	<a class="" href="https://github.com/dch-GH" target="_blank">
 		<Github {scale} />
 	</a>
 
@@ -14,3 +14,14 @@
 		<Mail {scale} />
 	</a>
 </div>
+
+<style>
+	a {
+		color: var(--pictonblue);
+		transition: all ease-in-out 200ms;
+	}
+
+	a:hover {
+		color: var(--prussianblue) !important;
+	}
+</style>

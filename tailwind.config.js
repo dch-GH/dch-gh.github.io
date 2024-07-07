@@ -9,6 +9,7 @@ export default {
             white: '#FFFFFF',
             transparentblue: '#2447f779',
             blue: '#2446f7',
+            red: '#FF0000',
             black: '#000000',
             darkblue: '#091856',
             navyblue: '#0f2898',
@@ -22,7 +23,7 @@ export default {
             silverlakeblue: '#778da9ff',
             cerulean: '#007ea7ff',
             platinum: '#e0e1ddff',
-            pictonblue: '#00a8e8ff',
+            pictonblue: '#00a8e8ff'
         },
         extend: {
             borderRadius: {

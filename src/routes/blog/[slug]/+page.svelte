@@ -6,6 +6,8 @@
 	export let data: PageData;
 </script>
 
+<base target="_blank" />
+
 <!-- Outer container -->
 <div class="md:px-18 container mx-auto flex flex-col pt-16 font-inter lg:px-32 xl:px-64">
 	<!-- Blogpost inner -->

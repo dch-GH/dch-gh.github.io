@@ -2,7 +2,7 @@ import type { PageLoad } from './$types';
 
 const current: App.Project = {
     title: "🧍 Current Project",
-    description: "Something about dungeons and crawling them",
+    description: "Something about dungeons and crawling them.",
     date: "May 25 2024",
     link: "",
     image: "",

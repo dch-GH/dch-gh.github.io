@@ -44,7 +44,7 @@
 			<p class="text-2xl">Programmer</p>
 			<p class="text-2xl">
 				Project: <a
-					class="text-silverlakeblue hover:text-prussianblue"
+					class="text-pictonblue hover:text-prussianblue"
 					target="_blank"
 					href="https://studiominus.nl/madness-interactive-reloaded.html"
 					>Madness Interactive Reloaded</a

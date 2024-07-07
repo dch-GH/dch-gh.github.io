@@ -8,6 +8,7 @@
     --yinmn-blue: #415a77ff;
     --silver-lake-blue: #778da9ff;
     --platinum: #e0e1ddff;
+    --prussianblue: #003459ff;
 
     --white: #ffffffff;
     --rich-black-2: #00171fff;
@@ -69,7 +70,6 @@
     font-weight: bold;
 }
 
-
 body {
     background-color: var(--oxford-blue);
 }
@@ -89,22 +89,19 @@ nav {
     overflow-x: hidden;
 }
 
+a {
+    transition: all ease-in-out 200ms;
+}
+
 a:hover {
-    color: var(--picton-blue) !important;
+    color: var(--picton-blue);
+    transition: all ease-in-out 200ms;
 }
 
 hr {
     color: var(--cerulean);
     margin-bottom: 2em;
 }
-
-/* .vr {
-    margin-left: 8px;
-    margin-right: 8px;
-    width: 2px;
-    height: 1.5em;
-    background-color: var(--picton-blue);
-} */
 
 .date {
     color: var(--silver-lake-blue);

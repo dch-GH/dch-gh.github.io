@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="flex flex-col sm:w-100 p-0 mx-2 sm:px-5 md:px-16 sm:m-auto pt-16 font-inter items-center"
+	class="flex flex-col gap-8 sm:w-100 p-0 mx-2 sm:px-5 md:px-16 sm:m-auto pt-16 font-inter items-center"
 >
 	{#each data.posts as blogPost}
 		<a

@@ -6,7 +6,8 @@ editDate: 'Jul 05 2024'
 thumbnail: "/posts/making-this-site/heroImage1.jpg"
 ---
 
-# Which framework, bro?
+<BlogHeader title="Which framework, bro?"/>
+
 I've had quite a time trying to get a website like this put together. I first had the idea to make my own site (specifically as a portfolio piece) around April of 2023.
 When I set about on the project, I had a hard time picking a framework. My experience in webdev is (thankfully) pretty limited. In the past, I've heard jokes/opinions of other people lamenting
 the abundance of frameworks and then I very suddenly understood their pain.
@@ -52,9 +53,10 @@ an ASP.Net Razor/Blazor, except to make UI for your games. Considering that I'd 
 journey I'm dying to just use Razor so I can interweave C#, HTML, and CSS in the same file to construct a page. Apparently there are some [ways](https://github.com/ZarehD/AspNetStatic), but I still find them a bit 
 overly complicated for my purposes and annoying to set up.
 
----
+<BlogDivider/>
 
-# The framework in question:
+<BlogHeader title="The framework in question: "/>
+
 Today I was determined to use one of these fancy frameworks or tools and make the website properly.
 I was going to give [Hugo](https://gohugo.io/) another shot, then considered [11ty](https://www.11ty.dev/), but a few people I know really enjoyed using [Sveltekit](https://kit.svelte.dev/).
 I wanted to try this one since it seems to receive universal praise. This is actually the second time I'm writing this part of the post since originally, a few days ago, I had made the site using Astro.
@@ -62,7 +64,8 @@ Astro was really easy to understand, set up and get going with but I wanted just
 So today (July 5th 2024) I'm finishing up the website **again** after spending the last couple days rewriting the site using Sveltekit and [Tailwind](https://tailwindcss.com/). The docs for Sveltekit are "good" but
 as usual with a lot of frameworks leave a lot desired in my opinion. The verdict is that I think if you need something that can scale a bit in the range of "relatively simple needs", Astro can definitely work for you.
 
-# Why?
+<BlogHeader title="Why?"/>
+
 The driving motivation this time around is mostly to have my own devblogs. I **love** devblogs. I've read *every* [Factorio Blog](https://factorio.com/blog/), some of them multiple times out of desperation since nothing else comes close. 
 Another one I've enjoyed is [Clark Kromenaker](http://clarkkromenaker.com/)'s. He's re-implenting this engine for a heavily data-oriented game called Gabriel Knight 3. It's really satisfying.
 I obviously can't list all the ones I've read, but it got to the point where I was wishing there were a good aggregator specifically for devblogs. Reddit seems like the obvious answer to this, but I tried that. Maybe I didn't look hard enough.
