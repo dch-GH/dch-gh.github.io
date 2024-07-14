@@ -5,7 +5,9 @@ export const load: PageServerLoad = async ({ fetch }) => {
     const allPostFiles = import.meta.glob("/src/content/blogs/*.md");
     const iterablePostFiles = Object.entries(allPostFiles);
 
-    const posts: App.BlogPost[] = await Promise.all(
+
+
+    let unsortedPosts: App.BlogPost[] = await Promise.all(
         iterablePostFiles.map(async ([filePath, resolver]) => {
             const { metadata }: any = await resolver();
             const { name } = path.parse(filePath);
@@ -16,6 +18,10 @@ export const load: PageServerLoad = async ({ fetch }) => {
             };
         })
     );
+
+    const posts = unsortedPosts.sort((a, b) => {
+        return new Date(b.date).valueOf() - new Date(a.date).valueOf();
+    });
 
     return { posts };
 };

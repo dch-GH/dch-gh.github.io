@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import '../syntax-highlight.css';
 	import NavLink from '$lib/components/NavLink.svelte';
 	import Background from '$lib/components/Background.svelte';
 </script>
