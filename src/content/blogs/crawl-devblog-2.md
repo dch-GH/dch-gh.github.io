@@ -167,7 +167,9 @@ Last week I mentioned how good the shadows in Roguemoji look and that I wanted t
 ![image](/posts/devblogs/crawl/shadows1.png)
 
 
-This definitely looks better, but you might notice something is off. The trees don’t have any shadows! The problem is that the trees are actually just wall tiles, not entities. I first configured the shadows to only draw for entities. Tiles are rendered via a batch system whereas entities are rendered using regular Walgelijk draw commands. At first I almost gave up before even trying because I assumed it would be too messy to get shadows working for both, but it was very easy thanks to Walgelijk being so awesome.
+This definitely looks better, but you might notice something is off. The trees don’t have any shadows! The problem is that the trees are actually just wall tiles, not entities. I first configured the shadows to only draw for entities. Tiles are rendered via a batch system whereas entities are rendered using regular Walgelijk draw commands. At first I almost gave up before even trying because I assumed it would be too messy to get shadows working for both, but it was very easy thanks to Walgelijk being so awesome. 
+
+You may also notice that there is now a floor under those trees. Before, it was just a black square underneath them. Now I render a "fake" floor tile underneath non-tile-shaped tiles (just trees for now). The floors are fake since they are rendered manually instead of representing actual tiles like in a multi-layer tilemap.
 
 
 ![image](/posts/devblogs/crawl/shadows2.png)
@@ -177,5 +179,6 @@ That looks a LOT better.
 
 There was an issue where the tree shadows would stick out on left side of a neighboring tile even if you couldn't see the tree due to FOV. That was an easy fix that also led me to the realization that I wasn't skipping non-visible tiles while rendering. 🤦
 These are probably not final. I do want to add a Gaussian blur effect to make it look more like a fuzzy drop shadow, but I didn't have the time to figure out the shader.
+
 
 See you again next week!
