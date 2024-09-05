@@ -86,6 +86,8 @@ export default {
                         '--tw-prose-headings': theme('colors.white'),
                         '--tw-prose-bold': theme('colors.cerulean'),
                         '--tw-prose-links': theme('colors.pictonblue'),
+                        '--tw-prose-quotes': theme('colors.cerulean'),
+                        '--tw-prose-code': theme('colors.pictonblue')
                     }
                 }
             })
