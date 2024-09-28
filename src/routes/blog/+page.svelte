@@ -1,6 +1,8 @@
 <!-- Blog list page -->
 <script lang="ts">
 	import { page } from '$app/stores';
+	import * as dates from '$lib/dates';
+	import NewFlag from '$lib/components/NewFlag.svelte';
 	export let data;
 </script>
 
@@ -13,7 +15,14 @@
 			class="container flex flex-col align-items-center justify-items-center md:flex-row bg-blackalpha rounded-md text-white hover:border-pictonblue hover:border-b-4"
 		>
 			<div class="container flex flex-col text-1xl md:text-2xl p-5">
-				<p class="date mb-2 text-2xl md:text-3xl">{blogPost.date}</p>
+				<p class="date mb-2 text-2xl md:text-3xl">
+					{blogPost.date}
+					{#if dates.isWithinDays(new Date(blogPost.date))}
+						<div class="translate-x-[210px] translate-y-[-33px]">
+							<NewFlag></NewFlag>
+						</div>{/if}
+				</p>
+
 				<h1 class="mb-2 text-3xl md:text-5xl lg:text-6xl font-bold">
 					{blogPost.title}
 				</h1>
