@@ -7,12 +7,12 @@
 </script>
 
 <div
-	class="flex flex-col gap-8 sm:w-100 p-0 mx-2 sm:px-5 md:px-16 sm:m-auto pt-16 font-inter items-center"
+	class="flex flex-col gap-8 sm:w-100 p-0 mx-2 sm:px-5 md:px-16 sm:m-auto font-inter items-center"
 >
 	{#each data.posts as blogPost}
 		<a
 			href="{$page.url.pathname}/{blogPost.slug}"
-			class="container flex flex-col align-items-center justify-items-center md:flex-row bg-blackalpha rounded-md text-white hover:border-pictonblue hover:border-b-4"
+			class="container flex flex-col align-items-center justify-items-center md:flex-row bg-transparent border border-platinum rounded-md text-white hover:border-pictonblue hover:border-b-4"
 		>
 			<div class="container flex flex-col text-1xl md:text-2xl p-5">
 				<p class="date mb-2 text-2xl md:text-3xl">

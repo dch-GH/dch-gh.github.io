@@ -1,16 +1,14 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import InfoCard from '$lib/components/InfoCard.svelte';
+	import InfoCardColumn from '$lib/components/InfoCardRow.svelte';
 
 	export let data: PageData;
 </script>
 
 <div class="w-full flex flex-col items-center">
-	<section
-		class="flex flex-col sm:w-[90%] md:w-1/2 mx-2 sm:mx-auto my-16 gap-10 font-inter text-shadow"
-	>
+	<section class="flex flex-col sm:w-[90%] md:w-1/2 mx-2 sm:mx-auto gap-10 font-inter text-shadow">
 		{#each data.projects as project}
-			<InfoCard>
+			<InfoCardColumn>
 				<div class="flex flex-row">
 					<h2 class="text-3xl font-bold mb-2">{project.title}</h2>
 					{#if project.link}
@@ -29,7 +27,7 @@
 					})}
 				</p>
 				<p class="text-md sm:text-xl">{project.description}</p>
-			</InfoCard>
+			</InfoCardColumn>
 		{/each}
 	</section>
 </div>

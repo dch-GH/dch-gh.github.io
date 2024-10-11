@@ -12,7 +12,7 @@ const mir: App.Project = {
     title: "🛑 Madness Interactive Reloaded",
     description: "I worked on various parts of MIR, but more notably: improved upon/created dev tools and editors, lots of bugfixing, and writing tests and documentation.",
     date: "March 28 2023",
-    link: "",
+    link: "https://studiominus.nl/madness-interactive-reloaded.html",
     image: "",
 }
 

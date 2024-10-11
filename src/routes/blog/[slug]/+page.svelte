@@ -9,7 +9,7 @@
 <base target="_blank" />
 
 <!-- Outer container -->
-<div class="md:px-18 container mx-auto flex flex-col pt-16 font-inter lg:px-32 xl:px-64">
+<div class="md:px-18 flex flex-col font-inter lg:px-32 xl:px-64">
 	<!-- Blogpost inner -->
 	<div class="mb-10 text-white text-shadow pt-0 px-2 sm:px-5 md:px-10 flex flex-col">
 		<p class="text-pictonblue mb-5 text-5xl md:text-7xl sm:text-5xl font-bold sm:px-0">
@@ -25,7 +25,7 @@
 
 		<hr />
 		<article
-			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-blackalpha text-platinum max-w-full"
+			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-transparent border border-platinum text-platinum max-w-full"
 		>
 			{#if data.blogPost.editDate}
 				<div class="flex flex-row justify-items-center">
