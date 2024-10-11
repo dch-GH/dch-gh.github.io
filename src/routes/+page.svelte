@@ -31,9 +31,9 @@
 
 	<InfoCard>
 		<div>
-			<h1 class="mb-2 text-5xl sm:text-5xl md:text-6xl font-bold">Current Position</h1>
-			<p class="text-2xl">Programmer</p>
-			<p class="text-2xl">
+			<h1 class="mb-2 text-3xl sm:text-5xl md:text-5xl font-bold">Current Position</h1>
+			<p class="text-1xl sm:text-2xl">Programmer</p>
+			<p class="text-1xl sm:text-2xl">
 				Project: <a
 					class="text-pictonblue hover:text-prussianblue"
 					target="_blank"
@@ -48,7 +48,7 @@
 			<hr />
 		</div>
 		<a
-			class="w-fit mx-auto lg:mx-0 lg:justify-center md:scale-[1.35] md:hover:scale-[1.55] ease-in-out duration-200"
+			class="w-fit mx-auto lg:mx-2 xl:mx-0 lg:justify-center scale-[1.2] md:scale-[1.35] md:hover:scale-[1.55] ease-in-out duration-200"
 			target="_blank"
 			href="https://studiominus.nl/"
 		>

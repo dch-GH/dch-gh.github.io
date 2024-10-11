@@ -6,9 +6,7 @@
 	export let data;
 </script>
 
-<div
-	class="flex flex-col gap-8 sm:w-100 p-0 mx-2 sm:px-5 md:px-16 sm:m-auto font-inter items-center"
->
+<div class="flex flex-col gap-8 sm:w-100 p-0 mx-2 sm:m-auto font-inter items-center">
 	{#each data.posts as blogPost}
 		<a
 			href="{$page.url.pathname}/{blogPost.slug}"
@@ -23,7 +21,7 @@
 						</div>{/if}
 				</p>
 
-				<h1 class="mb-2 text-3xl md:text-5xl lg:text-6xl font-bold">
+				<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold">
 					{blogPost.title}
 				</h1>
 				<p class="lg:text-2xl">{blogPost.description}</p>

@@ -20,10 +20,9 @@
 </script>
 
 <Background></Background>
-
-<div class="container mx-auto font-inter">
+<div class="container mx-auto w-full lg:w-[70%] font-inter px-2 md:px-0">
 	<nav
-		class="flex justify-content-center top-0 z-50 p-2 mb-12 font-bold font-inter bg-transparent text-platinum justify-center"
+		class="flex justify-content-center top-0 z-50 py-2 mb-12 font-bold font-inter bg-transparent text-platinum justify-center"
 	>
 		<div class="flex flex-row text-1xl md:text-2xl w-full mx-auto">
 			<NavLink href="/">🏡 Duston's Page</NavLink>

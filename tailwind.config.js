@@ -17,7 +17,7 @@ export default {
             lightblue: '#0092ff',
             yinmnblue: '#415a77ff',
 
-            blackalpha: 'rgba(3, 15, 29, 0.7)',
+            blackalpha: 'rgba(3, 15, 29, 0.25)',
             richblack2: '#00171fff',
             prussianblue: '#003459ff',
             silverlakeblue: '#778da9ff',
@@ -86,7 +86,7 @@ export default {
                         '--tw-prose-headings': theme('colors.white'),
                         '--tw-prose-bold': theme('colors.cerulean'),
                         '--tw-prose-links': theme('colors.pictonblue'),
-                        '--tw-prose-quotes': theme('colors.cerulean'),
+                        '--tw-prose-quotes': theme('colors.silverlakeblue'),
                         '--tw-prose-code': theme('colors.pictonblue')
                     }
                 }

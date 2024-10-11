@@ -9,9 +9,9 @@
 <base target="_blank" />
 
 <!-- Outer container -->
-<div class="md:px-18 flex flex-col font-inter lg:px-32 xl:px-64">
+<div class="flex flex-col font-inter w-full mx-auto 2xl:w-[75%]">
 	<!-- Blogpost inner -->
-	<div class="mb-10 text-white text-shadow pt-0 px-2 sm:px-5 md:px-10 flex flex-col">
+	<div class="mb-10 text-white text-shadow flex flex-col self-center w-full">
 		<p class="text-pictonblue mb-5 text-5xl md:text-7xl sm:text-5xl font-bold sm:px-0">
 			{data.blogPost.title}
 		</p>
@@ -25,7 +25,7 @@
 
 		<hr />
 		<article
-			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-transparent border border-platinum text-platinum max-w-full"
+			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-blackalpha backdrop-blur-3xl border border-platinum text-platinum max-w-full"
 		>
 			{#if data.blogPost.editDate}
 				<div class="flex flex-row justify-items-center">

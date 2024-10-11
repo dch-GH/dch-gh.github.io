@@ -6,11 +6,11 @@
 </script>
 
 <div class="w-full flex flex-col items-center">
-	<section class="flex flex-col sm:w-[90%] md:w-1/2 mx-2 sm:mx-auto gap-10 font-inter text-shadow">
+	<section class="flex flex-col md:w-full sm:mx-auto gap-10 font-inter text-shadow">
 		{#each data.projects as project}
 			<InfoCardColumn>
 				<div class="flex flex-row">
-					<h2 class="text-3xl font-bold mb-2">{project.title}</h2>
+					<h2 class="text-3xl md:text-5xl font-bold mb-2">{project.title}</h2>
 					{#if project.link}
 						<a
 							class="text-2xl mx-2 hover:scale-125 duration-200"
