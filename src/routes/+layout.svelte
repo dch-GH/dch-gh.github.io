@@ -27,14 +27,14 @@
 		<div class="flex flex-row text-1xl md:text-2xl w-full mx-auto">
 			<NavLink href="/">🏡 Duston's Page</NavLink>
 			<div class="mr-0 ml-auto flex flex-row gap-5">
-				<NavLink href="/blog"
-					>{'Blog'}
+				<div class="flex flex-row">
+					<NavLink href="/blog">{'Blog'}</NavLink>
 					{#if hasNewBlog()}
-						<div class="translate-x-[23px] translate-y-[-43px]">
+						<div class="translate-x-[-8px]">
 							<NewFlag></NewFlag>
 						</div>
 					{/if}
-				</NavLink>
+				</div>
 				<NavLink href="/projects">{'Projects'}</NavLink>
 			</div>
 		</div>

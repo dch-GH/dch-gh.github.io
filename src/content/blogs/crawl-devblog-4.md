@@ -7,7 +7,6 @@ thumbnail: "/posts/devblogs/crawl/blog4_crafting.png"
 
 
 <Spotify src="track/3IiZ5QNMDWrRYS0EAeyWIU?si=08849215b4144a38" />
-<hr>
 
 Hey, long time no see. Last time I did say this:
 
@@ -86,5 +85,5 @@ I'm glad I haven't completely dropped this project, but I'm not at all blind to 
 I've been lucky in the past for the time I had to dedicate to stuff without care, and I'm glad I did in some ways. As for these blogs, as I kind of expected, this will probably just turn into "when I feel like it". So that's why all the blogs I like are so inactive! I understand now. I'll try to post something if anything interesting happens. 
 
 Thanks for reading, see ya next time!
-<hr>
+
 <Spotify src="track/5lrCiaF8NG0IhNSqJEwbs6?si=ffca164a804e41bb" />

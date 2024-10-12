@@ -15,15 +15,17 @@
 			<div class="container flex flex-col text-1xl md:text-2xl p-5">
 				<p class="date mb-2 text-2xl md:text-3xl">
 					{blogPost.date}
-					{#if dates.isWithinDays(new Date(blogPost.date))}
-						<div class="translate-x-[210px] translate-y-[-33px]">
-							<NewFlag></NewFlag>
-						</div>{/if}
 				</p>
 
-				<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold">
-					{blogPost.title}
-				</h1>
+				<div class="flex flex-row">
+					<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold">
+						{blogPost.title}
+					</h1>
+					{#if dates.isWithinDays(new Date(blogPost.date))}
+						<div class="scale-[1.25]">
+							<NewFlag></NewFlag>
+						</div>{/if}
+				</div>
 				<p class="lg:text-2xl">{blogPost.description}</p>
 			</div>
 
