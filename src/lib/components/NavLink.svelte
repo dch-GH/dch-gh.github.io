@@ -3,6 +3,6 @@
 	export let href: string = '';
 </script>
 
-<a {href} class={href === $page.url.pathname ? 'border-b-[3px] border-pictonblue' : ''}>
+<a {href} class={href === $page.url.pathname ? 'text-pictonblue' : 'text-platinum'}>
 	<slot />
 </a>

@@ -20,7 +20,7 @@
 </script>
 
 <Background></Background>
-<div class="container mx-auto w-full lg:w-[70%] font-inter px-2 md:px-0">
+<div class="container mx-auto w-full lg:w-[70%] font-inter px-2 md:px-0 mb-8">
 	<nav
 		class="flex justify-content-center top-0 z-50 py-2 mb-12 font-bold font-inter bg-transparent text-platinum justify-center"
 	>
