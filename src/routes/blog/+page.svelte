@@ -18,7 +18,7 @@
 				</p>
 
 				<div class="flex flex-row">
-					<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold">
+					<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
 						{blogPost.title}
 					</h1>
 					{#if dates.isWithinDays(new Date(blogPost.date))}
@@ -30,10 +30,7 @@
 			</div>
 
 			<div class="relative h-96 w-full md:h-auto md:basis-1/2">
-				<img
-					class="mt-5 sm:mt-0 mx-0 absolute w-full h-full object-cover sm:rounded-md"
-					src={blogPost.thumbnail}
-				/>
+				<img class="absolute w-full h-full object-cover sm:rounded-md" src={blogPost.thumbnail} />
 			</div>
 		</a>
 	{/each}
