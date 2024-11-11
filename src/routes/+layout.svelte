@@ -12,7 +12,8 @@
 	function hasNewBlog(): boolean {
 		function datePredicate(blog: App.BlogPost): boolean {
 			const blogDate = new Date(blog.date);
-			return dates.isWithinDays(blogDate, 31);
+			console.log(blogDate);
+			return dates.isWithinDays(blogDate, 15);
 		}
 
 		return data.posts.some((blog) => datePredicate(blog));
