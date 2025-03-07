@@ -13,7 +13,6 @@ So, last time I was upset and frustrated about that game I poured months into. I
 
 Since then, I did indeed become very busy. I didn't think I would *actually* do the whole abandoned blog thing, but of course it happened x). After working with C# and a (good) [engine](https://github.com/mestiez/Walgelijk) passionately for a few months, I abandoned the project and took a break to focus on stuff outside of programming/gamedev. 
 
-
 <BlogHeader title="Odin Break"/>
 
 After a bit, when I felt like getting back into it, I took a break from C# and worked with [Odin](https://odin-lang.org/) some more. This is my favorite systems programming language by far. It's C without all the dumb shit. I've always preferred C over C++, and I like the removal of dumb shit. You can look into Odin if you want to, I'm not selling it. It's fun to write in, it's design is pragmatic, and is a joy to work with. One problem I have with working outside of engines is needing a good UI system. I don't want to make my own, and a good UI system is something I find mandatory for making a game or other realtime app. I saw [Clay](https://github.com/nicbarker/clay), which is awesome enough to have first-party Odin bindings, and implemented it into my small project. It's very good and comes with a useful UI debugger. 
@@ -155,7 +154,7 @@ I almost went with the "Entity will just be a super big struct that can handle a
 
 That's sorta all I've had going on, but not really, since you can only put so much into words and our minds blur and obscure memory anyway. There is one interesting thing that's happened though. Last year I played a lot of [HYPER DEMON](https://store.steampowered.com/app/1743850/HYPER_DEMON/), to the extent that I could close my eyes and see the game in scarily high detail. While the music in the game is interesting and good, I always listen to my own, more well-fitting music.
 
-Stuff like this: <iframe class="mx-auto self-center p-5" width="800" height="400" src="https://www.youtube.com/embed/bkintfXvEAY" title="HEALTH :: UNLOVED :: MUSIC VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Stuff like this: <iframe class="mx-auto self-center p-3 w-[100%] h-[100%] md:h-[500px]"  src="https://www.youtube.com/embed/bkintfXvEAY" title="HEALTH :: UNLOVED :: MUSIC VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 In particular, lots and lots of another artist I absolutely love. Her songs fit perfectly. I just wished the game was timed to the music in some way... 🙂. I was on one of my walks listening to her music when the idea for this game fully occured to me. This is a game I **actually** want to play. Not just saying that in the sense of "make the game you want to play", no, this a game I hurriedly want to make so I can play and enjoy it as soon as possible. 
 
