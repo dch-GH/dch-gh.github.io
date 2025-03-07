@@ -1,8 +1,16 @@
 import type { PageLoad } from './$types';
 
 const current: App.Project = {
-    title: "🧍 Current Project",
-    description: "Something about dungeons and crawling them.",
+    title: "🕺DBM",
+    description: "Idea that came to me while on a walk listening to music.",
+    date: "Feb 26 2025",
+    link: "",
+    image: "",
+};
+
+const emoji_roguelike: App.Project = {
+    title: "🧍 Emoji Roguelike",
+    description: "Something about dungeons and crawling them. This didn't pan out... ☠️",
     date: "May 25 2024",
     link: "",
     image: "",
@@ -25,7 +33,7 @@ const pjp23: App.Project = {
 }
 
 export const load: PageLoad = async ({ params }) => {
-    const projects: App.Project[] = [current, mir, pjp23];
+    const projects: App.Project[] = [current, emoji_roguelike, mir, pjp23];
     return {
         projects
     };

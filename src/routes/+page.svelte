@@ -15,7 +15,7 @@
 		>
 			<img
 				class="rounded-lg"
-				src="https://cdn.discordapp.com/avatars/703715865178407102/d04529657c173706f2ea2105033e8783.png?size=128"
+				src="https://cdn.discordapp.com/avatars/703715865178407102/bce2264682377eb2f41077559222bbc7.webp?size=128"
 				alt="An image of a 3D rendered woman's face."
 			/>
 		</a>

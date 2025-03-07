@@ -22,7 +22,7 @@
 						{blogPost.title}
 					</h1>
 					{#if dates.isWithinDays(new Date(blogPost.date))}
-						<div class="scale-[1.25]">
+						<div class="scale-[1.25] ml-1">
 							<NewFlag></NewFlag>
 						</div>{/if}
 				</div>
