@@ -21,7 +21,7 @@
 					<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
 						{blogPost.title}
 					</h1>
-					{#if dates.isWithinDays(new Date(blogPost.date))}
+					{#if dates.isWithinDays(new Date(blogPost.date), 15)}
 						<div class="scale-[1.25] ml-1">
 							<NewFlag></NewFlag>
 						</div>{/if}
