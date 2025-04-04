@@ -1,5 +1,6 @@
 import { getAllBlogs } from "$lib/util";
 import { Feed } from "feed"
+import { page } from '$app/stores';
 export const prerender = true
 
 function removeCDATA(xml: string): string {
@@ -21,8 +22,10 @@ export async function GET() {
         for (const post of blogs.posts) {
             feed.addItem({
                 title: post.title,
+                image: `http://dch-gh.github.io${post.thumbnail}`,
                 description: post.description,
-                date: new Date(post.date), link: `http://dch-gh.github.io/${post.slug}`
+                date: new Date(post.date),
+                link: `http://dch-gh.github.io/${post.slug}`
             });
         }
 
