@@ -22,7 +22,7 @@ export async function GET() {
             feed.addItem({
                 title: post.title,
                 description: post.description,
-                date: new Date(post.date), link: `http://dch-gh.github.io/blog/${post.slug}`
+                date: new Date(post.date), link: `http://dch-gh.github.io/${post.slug}`
             });
         }
 
