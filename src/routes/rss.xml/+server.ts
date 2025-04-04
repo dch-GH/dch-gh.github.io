@@ -1,6 +1,6 @@
 import { getAllBlogs } from "$lib/util";
 import { Feed } from "feed"
-import type { Item } from "feed/lib/typings";
+export const prerender = true
 
 function removeCDATA(xml: string): string {
     return xml.replace(/<!\[CDATA\[(.*?)\]\]>/gs, "$1");
