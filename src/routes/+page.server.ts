@@ -1,4 +1,4 @@
-import type { PageServerLoad } from './$types';
+import type { PageServerLoad } from './blog/$types';
 import path from 'path';
 
 export const load: PageServerLoad = async ({ fetch }) => {

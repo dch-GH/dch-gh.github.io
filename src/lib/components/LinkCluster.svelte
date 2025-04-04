@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Github from './Icons/Github.svelte';
 	import Mail from './Icons/Mail.svelte';
+	import Rss from './Icons/RSS.svelte';
+	import { page } from '$app/stores';
 
 	let scale = '0.6em';
 </script>
@@ -12,6 +14,10 @@
 
 	<a href="mailto:codesnax@yahoo.com">
 		<Mail {scale} />
+	</a>
+
+	<a href="{$page.url}rss.xml">
+		<Rss {scale} />
 	</a>
 </div>
 
