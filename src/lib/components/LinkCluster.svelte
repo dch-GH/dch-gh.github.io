@@ -16,7 +16,7 @@
 		<Mail {scale} />
 	</a>
 
-	<a href="{$page.url}rss.xml">
+	<a target="_blank" href="{$page.url}rss.xml">
 		<Rss {scale} />
 	</a>
 </div>
