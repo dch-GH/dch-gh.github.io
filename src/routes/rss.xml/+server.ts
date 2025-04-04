@@ -13,7 +13,7 @@ export async function GET() {
             id: "",
             link: "http://dch-gh.github.io",
             feedLinks: {
-                rss: "http://dch-gh.github.io\\rss.xml"
+                rss: "http://dch-gh.github.io/rss.xml"
             },
             copyright: `Copyright ${new Date().getFullYear().toString()}, Duston`
         });
@@ -22,7 +22,7 @@ export async function GET() {
             feed.addItem({
                 title: post.title,
                 description: post.description,
-                date: new Date(post.date), link: `http://dch-gh.github.io\\blog\\${post.slug}`
+                date: new Date(post.date), link: `http://dch-gh.github.io/blog/${post.slug}`
             });
         }
 
