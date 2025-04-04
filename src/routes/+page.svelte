@@ -38,7 +38,9 @@
 			>
 				<div class="container flex flex-col text-1xl md:text-2xl p-5">
 					<div class="flex flex-row">
-						<h1 class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+						<h1
+							class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold whitespace-wrap md:whitespace-nowrap"
+						>
 							{blogPost.title}
 						</h1>
 
