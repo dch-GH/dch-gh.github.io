@@ -34,13 +34,11 @@
 		{#each data.posts as blogPost}
 			<a
 				href="{$page.url}{blogPost.slug}"
-				class="container flex flex-col align-items-center justify-items-center md:flex-row bg-transparent border-[2px] border-prussianblue rounded-md text-white hover:border-pictonblue hover:border-l-8"
+				class="blog-list-element container flex flex-col align-items-center justify-items-center md:flex-row bg-transparent border-b-[2px] border-silverlakeblue text-white hover:border-pictonblue hover:border-l-8"
 			>
 				<div class="container flex flex-col text-1xl md:text-2xl p-5">
 					<div class="flex flex-row">
-						<h1
-							class="mb-2 text-3xl md:text-4xl lg:text-5xl font-bold whitespace-wrap md:whitespace-nowrap"
-						>
+						<h1 class="mb-2 text-3xl md:text-3xl font-bold whitespace-wrap md:whitespace-nowrap">
 							{blogPost.title}
 						</h1>
 
@@ -52,7 +50,7 @@
 					<p class="date mb-2 text-xl md:text-2xl">
 						{blogPost.date}
 					</p>
-					<p class="lg:text-xl">{blogPost.description}</p>
+					<!-- <p class="text-md md:text-xl font-light">{blogPost.description}</p> -->
 				</div>
 
 				<div class="relative h-96 w-full md:h-auto md:basis-1/2">

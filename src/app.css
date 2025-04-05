@@ -106,9 +106,21 @@ hr {
 .date {
     color: var(--platinum);
     font-family: IBM Plex Mono;
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 video {
     margin: auto;
+}
+
+.blog-list-element {
+    border-radius: 8px 0 0 0;
+}
+
+.blog-list-element:nth-child(even) {
+    backdrop-filter: contrast(98%);
+}
+
+.blog-list-element:nth-child(odd) {
+    backdrop-filter: contrast(95%);
 }

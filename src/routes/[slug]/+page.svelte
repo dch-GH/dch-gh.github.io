@@ -1,6 +1,7 @@
 <!-- Blogpost page -->
 
 <script lang="ts">
+	import NavLink from '$lib/components/NavLink.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -10,6 +11,9 @@
 
 <!-- Outer container -->
 <div class="flex flex-col font-inter w-full mx-auto 2xl:w-[75%]">
+	<NavLink href="/"><p class="underline text-md md:text-xl">← Back to blogs</p></NavLink>
+	<div class="mb-8"></div>
+
 	<!-- Blogpost inner -->
 	<div class="mb-10 text-white text-shadow flex flex-col self-center w-full">
 		<p class="text-pictonblue mb-5 text-5xl md:text-7xl sm:text-5xl font-bold sm:px-0">
@@ -25,7 +29,7 @@
 
 		<hr />
 		<article
-			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-blackalpha backdrop-blur-3xl border border-platinum text-platinum max-w-full"
+			class="prose prose-maincolors w-full rounded-md p-5 font-inter bg-blackalpha backdrop-blur-3xl border border-silverlakeblue text-platinum max-w-full"
 		>
 			{#if data.blogPost.editDate}
 				<div class="flex flex-row justify-items-center">
