@@ -14,11 +14,7 @@
 			target="_blank"
 			href="https://windows96.bandcamp.com/album/dated-new-aesthetic"
 		>
-			<img
-				class="rounded-lg"
-				src="https://cdn.discordapp.com/avatars/703715865178407102/bce2264682377eb2f41077559222bbc7.webp?size=128"
-				alt="An image of a 3D rendered woman's face."
-			/>
+			<img class="rounded-lg" src="/images/pfp.jpg" alt="An image of a 3D rendered woman's face." />
 		</a>
 
 		<div class="text-5xl sm:text-7xl font-bold text-white pl-5">
