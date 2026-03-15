@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Crawl Blog #3</title>
+        <link
+            href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="../srcery.css"/>
+        <script src="../highlight.min.js"></script>
+        <script src="../index.js"></script>
+    </head>
+<div id="inner" class="w-full pl-2 pr-2 sm:p-0 xs:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5 mb-8">	<div class="container flex flex-row align-middle mb-5 items-center">
+		<a
+			id="pfp"
+			class="self-center"
+			target="_blank"
+			href="https://windows96.bandcamp.com/album/dated-new-aesthetic">
+			<img src="/images/pfp.jpg" alt="An image of a 3D rendered woman's face." />
+		</a>
+
+		<div class="text-5xl sm:text-7xl font-bold text-white pl-5">
+			<div id="linkcluster" class="flex gap-3 ml-0 mb-2 text-pictonblue">
+	<a class="" href="https://github.com/dch-GH" target="_blank">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0 24 24">
+		<path
+			fill="currentColor"
+			d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+		></path>
+</svg>
+	</a>
+
+	<a href="mailto:codesnax@yahoo.com">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0  24 24">
+		<path
+			fill="currentColor"
+			d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"
+		></path>
+</svg>
+	</a>
+
+	<a target="_blank" href="/index.xml">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0 24 24">
+		<path
+			fill="currentColor"
+			d="M5 21q-.825 0-1.412-.587T3 19t.588-1.412T5 17t1.413.588T7 19t-.587 1.413T5 21m12 0q0-2.925-1.1-5.462t-3-4.438t-4.437-3T3 7V4q3.55 0 6.625 1.325t5.4 3.65t3.65 5.4T20 21zm-6 0q0-1.675-.625-3.113T8.65 15.35t-2.537-1.725T3 13v-3q2.3 0 4.288.863t3.487 2.362t2.363 3.488T14 21z"
+		/>
+</svg>
+	</a>
+</div>
+			<span class="text-5xl md:text-7xl">Duston</span>
+		</div>
+	</div>
+<hr>
+<a id="back-to-blogs" class="md:text-xl" href="/">← Back to posts</a>
+<div class="blog-title-block">
+	<h0>Crawl Blog #3</h0>
+	<p>Softly shaded.</p>
+	<p class="date">Jul 21 2024</p>
+	<p class="date italic disabled">Last edited on: nil</p>
+</div><prose><p>Not much happened this week to be honest. I got caught up in... playing too much Elden Ring again...</p>
+<h1>Soft Shadows</h1>
+<p>I did get around to adding blurry soft shadows like I mentioned last week:</p>
+<p><video src="/posts/devblogs/crawl/softshadows1.mp4" type="video/mp4" controls></video></p>
+<p>This probably isn't the final version of the feature but it looks good enough already.
+I went ahead and made it an option in case the shader breaks on certain devices or causes framerate issues, though I doubt it will have a performance impact.
+Anyway, it only takes a couple seconds to make it an option so why not? Just don't go overboard throwing 100s of options at the player outside of console commands.</p>
+<h1>Random Stuff</h1>
+<p>I also experimented with having a sort of skybox in the background. I'd imagine it would be something like dense forest textures for the forest level, dark cave textures for the caves, etc.
+This led me to realize that I was using alpha for the checkerboard pattern on the tiles instead of just adjusting the brightness of the tile color, that's fixed now!
+Unfortunately, the optimization I did last week for skipping tiles that aren't visible means either the camera clear color or the skybox would render instead of the FOV &quot;not-visible&quot; color (black).
+So that didn't pan out but, it's whatever, it probably wouldn't look great anyway.</p>
+<p>Also, one of those bugs wasn't actually fixed, it came back. It didn't take me long to discover the problem and fix it for good this time (probably).</p>
+<h1>The Other Thing I Was Busy With</h1>
+<p>Other than Elden Ring, I did spend a few days tinkering with a sidescroller game in s&amp;box. <a href="https://carsonk.net/">Carson Kompon</a> was showing me how his <a href="https://sbox.game/facepunch/spritetools">Sprite Tools</a> library worked, and I thought it was so neat that it motivated me to tinker on something in s&amp;box again. It had been a while since I last worked with s&amp;box but, it didn't take long for me to get back into the groove and enjoy the relatively frictionless workflow that this engine provides.</p>
+<p><video src="/posts/devblogs/rose/rosedemo1.mp4" type="video/mp4" controls></video></p>
+<p>I was just messing around with the sprite tools but, I think I stumbled onto something potentially pretty fun and challenging. Being able to stumble onto interesting gameplay just by implementing something I wanted to play with (kicking rigidbodies around in this case) would be a great habit to start forming.</p>
+<p>Like I said, not a very productive week this time. I'm also going to (hopefully) start getting pretty busy with IRL stuff soon. Otherwise, I also hope I can figure out how to make this Crawl game fun. That would make for more interesting dev blogs in the future.</p>
+<p>Seeya next time!</p>
+<br/>
+<a id="back-to-blogs" class="md:text-xl" href="/">← Back to posts</a>
+</prose></div></body>
+</html>

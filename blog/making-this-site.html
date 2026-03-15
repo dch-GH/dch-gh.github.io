@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Making This Site</title>
+        <link
+            href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../style.css"/>
+        <link rel="stylesheet" href="../srcery.css"/>
+        <script src="../highlight.min.js"></script>
+        <script src="../index.js"></script>
+    </head>
+<div id="inner" class="w-full pl-2 pr-2 sm:p-0 xs:w-5/6 md:w-2/3 lg:w-1/2 xl:w-2/5 mb-8">	<div class="container flex flex-row align-middle mb-5 items-center">
+		<a
+			id="pfp"
+			class="self-center"
+			target="_blank"
+			href="https://windows96.bandcamp.com/album/dated-new-aesthetic">
+			<img src="/images/pfp.jpg" alt="An image of a 3D rendered woman's face." />
+		</a>
+
+		<div class="text-5xl sm:text-7xl font-bold text-white pl-5">
+			<div id="linkcluster" class="flex gap-3 ml-0 mb-2 text-pictonblue">
+	<a class="" href="https://github.com/dch-GH" target="_blank">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0 24 24">
+		<path
+			fill="currentColor"
+			d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
+		></path>
+</svg>
+	</a>
+
+	<a href="mailto:codesnax@yahoo.com">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0  24 24">
+		<path
+			fill="currentColor"
+			d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7l8-5V6l-8 5l-8-5v2z"
+		></path>
+</svg>
+	</a>
+
+	<a target="_blank" href="/index.xml">
+	<svg xmlns="http://www.w3.org/2000/svg" width=0.6em height=0.6em viewBox="0 0 24 24">
+		<path
+			fill="currentColor"
+			d="M5 21q-.825 0-1.412-.587T3 19t.588-1.412T5 17t1.413.588T7 19t-.587 1.413T5 21m12 0q0-2.925-1.1-5.462t-3-4.438t-4.437-3T3 7V4q3.55 0 6.625 1.325t5.4 3.65t3.65 5.4T20 21zm-6 0q0-1.675-.625-3.113T8.65 15.35t-2.537-1.725T3 13v-3q2.3 0 4.288.863t3.487 2.362t2.363 3.488T14 21z"
+		/>
+</svg>
+	</a>
+</div>
+			<span class="text-5xl md:text-7xl">Duston</span>
+		</div>
+	</div>
+<hr>
+<a id="back-to-blogs" class="md:text-xl" href="/">← Back to posts</a>
+<div class="blog-title-block">
+	<h0>Making This Site</h0>
+	<p>A blogpost about making this blog.</p>
+	<p class="date">Jul 01 2024</p>
+	<p class="date italic ">Last edited on: Jul 05 2024</p>
+</div><prose><h1>Which framework, bro?</h1>
+<p>I've had quite a time trying to get a website like this put together. I first had the idea to make my own site (specifically as a portfolio piece) around April of 2023.
+When I set about on the project, I had a hard time picking a framework. My experience in webdev is (thankfully) pretty limited. In the past, I've heard jokes/opinions of other people lamenting
+the abundance of frameworks and then I very suddenly understood their pain.</p>
+<p>There are <strong>actually</strong> too many options. I just wanted a basic static site to put stuff on and say &quot;here's what I've worked on&quot;. This framework, that framework, you need to use
+Vue components, React components, JSX, Next.js, Nuxt.js, compile this yourself, etc. COMPONENTS, COMPONENTS!! It was just very overwhelming- especially when you consider that all I've known up until that point
+is old-school HTML, JS, CSS. So, that's what I ended up opting for.</p>
+<p>I tried to make my website with the most basic tools possible: just VSCode + HTML/JS/CSS. Then I realized making it look good and act <a href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/">responsive</a>
+was way harder than I had guessed (go figure). So, I caved a little bit and used <a href="https://getbootstrap.com/">Bootstrap</a>. This library essentially gives you some premade CSS classes to work with.
+This wasn't a bad decision, it did mostly all I wanted it to do. The problem is I still
+wound up manually writing way more HTML than I should have. Also, responsive doesn't mean what you think it means unless you are already in the know. Responsive means how well the site adjusts to other devices, display sizes, etc,
+not the literal millisecond responsiveness of the website.
+Webdev is filled with terms that don't
+accurately represent their meaning. Try to guess what &quot;slug&quot; means in the context of webdev.</p>
+<p><strong>Take a look at this:</strong></p>
+<pre><code class="language-html">&lt;!-- MIR --&gt;
+&lt;div class=&quot;col-sm-&quot; style=&quot;padding: 24px;&quot;&gt;
+    &lt;div class=&quot;card bg-opacity-25 text-bg-dark&quot;&gt;
+        &lt;div class=&quot;card-body d-flex flex-column justify-content-center gap-2&quot;&gt;
+            &lt;p class=&quot;card-title display-6 text-left fw-bold&quot;&gt;Madness Interactive Reloaded&lt;/p&gt;
+            &lt;p class=&quot;fs-3 fw-medium&quot;&gt;2023&lt;/p&gt;
+            &lt;p class=&quot;fs-6&quot;&gt;I worked on various parts of MIR, but more notably:
+                improved upon/created
+                dev tools and editors, lots of bug fixing, and writing tests and documentation.&lt;/p&gt;
+            &lt;iframe height=&quot;360&quot; src=&quot;https://www.youtube.com/embed/9pq9Co8zC2Y&quot;
+                title=&quot;Madness Interactive Reloaded - Gameplay Trailer&quot; frameborder=&quot;0&quot;
+                allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot;
+                allowfullscreen&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p><strong>This is how the old site displayed content... my own little awful manually typed out components.
+Now, multiply that by all the projects and any other info boxes I wanted to add.</strong></p>
+<p>I do think it turned out better than it could've if I had chosen not to use Bootstrap, but it's still pretty bad.
+It was a stark contrast to what I've been a bit spoiled by: <a href="https://sbox.game/">s&amp;box</a>'s Razor UI. Basically, s&amp;box lets you use Razor in the same way you would when writing
+an ASP.Net Razor/Blazor, except to make UI for your games. Considering that I'd been using this for about 2 years, I got used to it! So, throughout this whole
+journey I'm dying to just use Razor so I can interweave C#, HTML, and CSS in the same file to construct a page. Apparently there are some <a href="https://github.com/ZarehD/AspNetStatic">ways</a>, but I still find them a bit
+overly complicated for my purposes and annoying to set up.</p>
+<h1>The framework in question:</h1>
+<p>Today I was determined to use one of these fancy frameworks or tools and make the website properly.
+I was going to give <a href="https://gohugo.io/">Hugo</a> another shot, then considered <a href="https://www.11ty.dev/">11ty</a>, but a few people I know really enjoyed using <a href="https://kit.svelte.dev/">Sveltekit</a>.
+I wanted to try this one since it seems to receive universal praise. This is actually the second time I'm writing this part of the post since originally, a few days ago, I had made the site using Astro.
+Astro was really easy to understand, set up and get going with but I wanted just a bit more flexibility. Sveltekit definitely gives you that at the cost of a bit more complexity.
+So today (July 5th 2024) I'm finishing up the website <strong>again</strong> after spending the last couple days rewriting the site using Sveltekit and <a href="https://tailwindcss.com/">Tailwind</a>. The docs for Sveltekit are &quot;good&quot; but
+as usual with a lot of frameworks leave a lot desired in my opinion. The verdict is that I think if you need something that can scale a bit in the range of &quot;relatively simple needs&quot;, Astro can definitely work for you.</p>
+<h1>Why?</h1>
+<p>The driving motivation this time around is mostly to have my own devblogs. I <strong>love</strong> devblogs. I've read <em>every</em> <a href="https://factorio.com/blog/">Factorio Blog</a>, some of them multiple times out of desperation since nothing else comes close.
+Another one I've enjoyed is <a href="http://clarkkromenaker.com/">Clark Kromenaker</a>'s. He's re-implenting this engine for a heavily data-oriented game called Gabriel Knight 3. It's really satisfying.
+I obviously can't list all the ones I've read, but it got to the point where I was wishing there were a good aggregator specifically for devblogs. Reddit seems like the obvious answer to this, but I tried that. Maybe I didn't look hard enough.</p>
+<p>I especially enjoy the ones that somehow perfectly balance being technical without being as boring as a whitepaper about rocks or something.
+I can only hope to hit that balance myself, but I want my own devblog too. I started working on a game at the end of May and I want to finish this one. I've had a bad habit of tinkering but never finishing stuff.
+I <em>did</em> finish a game jam project for the first time in November of last year, but I'll probably give that experience its own post instead.</p>
+<p>I want to see what it's like to write devblogs for a game you are actively developing.
+Maybe having devblogs to look forward to showing off progress on can help maintain motivation as well.</p>
+<p>Of course, it's not <em>that</em> simple. Never let this Yahtzee Croshaw image leave your mind:
+<img src="/posts/gamedev.png" alt="image" />
+This has been the first time that proper bugs have actually cropped up unexpectedly in a project of mine because there's actually enough code at play they can pop up in.
+So, I guess that's strangely a good sign.</p>
+<p>Anyway, thanks for reading.</p>
+<br/>
+<a id="back-to-blogs" class="md:text-xl" href="/">← Back to posts</a>
+</prose></div></body>
+</html>
