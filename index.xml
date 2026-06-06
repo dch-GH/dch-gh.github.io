@@ -1,0 +1,25 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel>
+<atom:link href="https://dch-gh.github.io/index.xml" rel="self" type="application/rss+xml"/>
+	<title>Duston's  Page</title>
+	<link>https://dch-gh.github.io/blog/</link>
+	<description>A blog by Duston</description><item>
+<title>2025 Prototype</title><link>https://dch-gh.github.io/blog/blog-march-12-2026-1</link><guid>https://dch-gh.github.io/blog/blog-march-12-2026-1</guid><pubDate>March 12 2026</pubDate><description>Reflecting on a failed prototype.</description></item>
+<item>
+<title>Solitaire/Winblows/Zed</title><link>https://dch-gh.github.io/blog/blog-march-12-2026</link><guid>https://dch-gh.github.io/blog/blog-march-12-2026</guid><pubDate>March 12 2026</pubDate><description>Remaking Solitaire and other things.</description></item>
+<item>
+<title>You Can Just Do Things</title><link>https://dch-gh.github.io/blog/blog-march-11-2026</link><guid>https://dch-gh.github.io/blog/blog-march-11-2026</guid><pubDate>March 11 2026</pubDate><description>YCJDT now dog!</description></item>
+<item>
+<title>A Pure Idea</title><link>https://dch-gh.github.io/blog/blog-7</link><guid>https://dch-gh.github.io/blog/blog-7</guid><pubDate>March 7 2025</pubDate><description>For a game.</description></item>
+<item>
+<title>Crawl Blog #5: Audio, Video, Pain</title><link>https://dch-gh.github.io/blog/crawl-devblog-5</link><guid>https://dch-gh.github.io/blog/crawl-devblog-5</guid><pubDate>Oct 11 2024</pubDate><description>Collections of sounds.</description></item>
+<item>
+<title>Crawl Blog #4</title><link>https://dch-gh.github.io/blog/crawl-devblog-4</link><guid>https://dch-gh.github.io/blog/crawl-devblog-4</guid><pubDate>Sept 5 2024</pubDate><description>Crafted systems.</description></item>
+<item>
+<title>Crawl Blog #3</title><link>https://dch-gh.github.io/blog/crawl-devblog-3</link><guid>https://dch-gh.github.io/blog/crawl-devblog-3</guid><pubDate>Jul 21 2024</pubDate><description>Softly shaded.</description></item>
+<item>
+<title>Crawl Blog #2</title><link>https://dch-gh.github.io/blog/crawl-devblog-2</link><guid>https://dch-gh.github.io/blog/crawl-devblog-2</guid><pubDate>Jul 14 2024</pubDate><description>It's not over after all.</description></item>
+<item>
+<title>Crawl Blog #1</title><link>https://dch-gh.github.io/blog/crawl-devblog-1</link><guid>https://dch-gh.github.io/blog/crawl-devblog-1</guid><pubDate>Jul 07 2024</pubDate><description>The first devblog about my game.</description></item>
+<item>
+<title>Making This Site</title><link>https://dch-gh.github.io/blog/making-this-site</link><guid>https://dch-gh.github.io/blog/making-this-site</guid><pubDate>Jul 01 2024</pubDate><description>A blogpost about making this blog.</description></item>
+</channel></rss>
