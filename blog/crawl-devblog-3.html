@@ -64,19 +64,19 @@
 	<p class="date">Jul 21 2024</p>
 	<p class="date italic disabled">Last edited on: nil</p>
 </div><prose><p>Not much happened this week to be honest. I got caught up in... playing too much Elden Ring again...</p>
-<h1>Soft Shadows</h1>
+<h1 id="soft-shadows"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#soft-shadows">#</a>Soft Shadows</h1>
 <p>I did get around to adding blurry soft shadows like I mentioned last week:</p>
 <p><video src="/posts/devblogs/crawl/softshadows1.mp4" type="video/mp4" controls></video></p>
 <p>This probably isn't the final version of the feature but it looks good enough already.
 I went ahead and made it an option in case the shader breaks on certain devices or causes framerate issues, though I doubt it will have a performance impact.
 Anyway, it only takes a couple seconds to make it an option so why not? Just don't go overboard throwing 100s of options at the player outside of console commands.</p>
-<h1>Random Stuff</h1>
+<h1 id="random-stuff"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#random-stuff">#</a>Random Stuff</h1>
 <p>I also experimented with having a sort of skybox in the background. I'd imagine it would be something like dense forest textures for the forest level, dark cave textures for the caves, etc.
 This led me to realize that I was using alpha for the checkerboard pattern on the tiles instead of just adjusting the brightness of the tile color, that's fixed now!
 Unfortunately, the optimization I did last week for skipping tiles that aren't visible means either the camera clear color or the skybox would render instead of the FOV &quot;not-visible&quot; color (black).
 So that didn't pan out but, it's whatever, it probably wouldn't look great anyway.</p>
 <p>Also, one of those bugs wasn't actually fixed, it came back. It didn't take me long to discover the problem and fix it for good this time (probably).</p>
-<h1>The Other Thing I Was Busy With</h1>
+<h1 id="the-other-thing-i-was-busy-with"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#the-other-thing-i-was-busy-with">#</a>The Other Thing I Was Busy With</h1>
 <p>Other than Elden Ring, I did spend a few days tinkering with a sidescroller game in s&amp;box. <a href="https://carsonk.net/">Carson Kompon</a> was showing me how his <a href="https://sbox.game/facepunch/spritetools">Sprite Tools</a> library worked, and I thought it was so neat that it motivated me to tinker on something in s&amp;box again. It had been a while since I last worked with s&amp;box but, it didn't take long for me to get back into the groove and enjoy the relatively frictionless workflow that this engine provides.</p>
 <p><video src="/posts/devblogs/rose/rosedemo1.mp4" type="video/mp4" controls></video></p>
 <p>I was just messing around with the sprite tools but, I think I stumbled onto something potentially pretty fun and challenging. Being able to stumble onto interesting gameplay just by implementing something I wanted to play with (kicking rigidbodies around in this case) would be a great habit to start forming.</p>

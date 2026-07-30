@@ -65,13 +65,13 @@
 	<p class="date italic disabled">Last edited on: nil</p>
 </div><prose><iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/4YQ4S2CjFPFOxcVP4Q92ks?si=4e46bc0e2fb942cb?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <p>Hi. I still have no idea how to make a fun game out of what I have.</p>
-<h1>Sound</h1>
+<h1 id="sound"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#sound">#</a>Sound</h1>
 <p>I got sound working.  Walgelijk/OpenTK/OpenAL are doing all the hard work, I just had to pass another parameter to the <code>Game</code> constructor in Walgelijk:</p>
 <pre><code class="language-cs">		_game = new Game(
 			new OpenTKWindow( &quot;Crawl&quot;, new Vector2( -1 ), new Vector2( 1280, 1024 ) ), new OpenALAudioRenderer() );
 </code></pre>
 <p>Very good API design as usual, zooi. I've said it a million times and I'll say it a billion more, I really enjoy working in this engine framework thing. It's actually a good thing that it's hard to distinguish it as either one or the either. Being in the middle between engine and framework is actually exactly what I've been wanting. zooi still doesn't understand how someone could possibly enjoy using Walgelijk but he'll just have to deal, I really enjoy it. I've come to like &quot;code-first&quot; &quot;code-centric&quot; engines/frameworks, especially after moving away from Unity years ago. I'm in a mode right now where I just don't care much about art, or that I'm trying to hone in on what I <em>can</em> do vs what I can't. At this point I'm not really sure if I can even program though...</p>
-<h2>Sound Collection</h2>
+<h2 id="sound-collection"><a class="jumper-h2" aria-hidden="true" tabindex="-1" href="#sound-collection">#</a>Sound Collection</h2>
 <p>I think I first saw this used in an open source game project I was interested in around 2020 or so. The concept is far from novel, it's just the first time I think I saw it done. A <code>SoundCollection</code> is almost self-explanatory. It's a collection of sounds except they share a common source. So in this case, I have footsteps, I want a bunch of different sounds for variation (more than just random pitch offset, which I will still probably do) that play for a single sound &quot;type&quot;. It'll be easier to understand from looking at the prototype:</p>
 <pre><code class="language-json">[
     {
@@ -150,7 +150,7 @@ public static void Play( string id )
 <p><video src="/posts/devblogs/crawl/blog5_sound_demo.mp4" type="video/mp4" controls></video></p>
 <p>So, it was a lot easier to get working than I expected. The most time consuming thing was me not realizing I didn't have the openAL32.dll library in my bin folder, oops.</p>
 <hr />
-<h1>Assets</h1>
+<h1 id="assets"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#assets">#</a>Assets</h1>
 <p>You may have noticed the use of the <code>Assets</code> class. zooi has been working on an AssetManager for Walgelijk, mostly due to the fact MIR requires it for modding. Another reason is due to the smaller file size when using an asset archive instead of raw assets.
 I've been putting off migrating to the Asset system because I thought it would be more annoying than it is to switch to it. Thanks to PostBuild events in the .csproj file, it's not an issue at all.</p>
 <pre><code class="language-xml">&lt;Target Name=&quot;PostBuild&quot; AfterTargets=&quot;PostBuildEvent&quot;&gt;
@@ -161,7 +161,7 @@ I've been putting off migrating to the Asset system because I thought it would b
 &lt;/Target&gt;
 </code></pre>
 <p>.waa is the archive format Walgelijk uses. I think it's cute, like saying &quot;waaaa&quot;. This PostBuild step runs a packer &quot;script&quot; (it's the game's entry point but if args are provided, it will pack and close instead of running the game like normal), then copies them to the ProjectDir (for debugging) and the TargetDir as per usual.</p>
-<h1>Outro</h1>
+<h1 id="outro"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#outro">#</a>Outro</h1>
 <p>While I'm struggling to do anything in terms of gameplay, I figured I could get some sounds in. I believe it may be extremely common that when people are working on a game, for a long time in the early stages there just isn't sound. Sound can bring the game up to a slightly higher level and make it pop a bit. I'm not trying to flounder around and do random stuff that doesn't matter. I'm not sure how to sit down and think about what would be fun to turn this into.</p>
 <p>It's like there's a brick wall in my brain. I've definitely considered giving up on it but I've stuck with it for so long that I shouldn't, but I really wouldn't blame myself since I just really have no clue where to take it. The problem is: what else do I do? I want to make something 2D and probably tile-based anyway, so why not just stick to this? I am rambling, which I do a lot :). Hopefully I'll be returning with some better news at some point.</p>
 <p>See you in the future.</p>

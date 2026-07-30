@@ -65,9 +65,9 @@
 	<p class="date italic disabled">Last edited on: nil</p>
 </div><prose><p>It’s official now, right? Two in a row makes this official!!
 I’m excited to show some progress so let’s go.</p>
-<h1>The Bugs</h1>
+<h1 id="the-bugs"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#the-bugs">#</a>The Bugs</h1>
 <p>Firstly, those bugs from last week which I felt like were some deep-rooted fundamental issues with the game turned out to be, in-fact, both simple 1 line of code fixes. After fixing these I felt my motivation return to what it was before. Now, onto what I’ve added with that rejuvenated motivation.</p>
-<h1>Prototype System</h1>
+<h1 id="prototype-system"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#prototype-system">#</a>Prototype System</h1>
 <p>A few projects I’ve worked with have done prefabs a few different ways. One I really enjoyed, which was in an ECS engine, used whatever your favorite data language is to define entity prototypes.</p>
 <p>So you would do something like this:</p>
 <pre><code class="language-yaml">    entity:
@@ -169,7 +169,7 @@ I’m excited to show some progress so let’s go.</p>
 <p>As you can see, I made good use of this system by having a bunch of things be prototypes instead of hardcoded.</p>
 <p><img src="/posts/devblogs/crawl/prototypes_jsons.png" alt="image" /></p>
 <p>This feels much nicer to work with.</p>
-<h1>Shadows</h1>
+<h1 id="shadows"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#shadows">#</a>Shadows</h1>
 <p>Last week I mentioned how good the shadows in Roguemoji look and that I wanted to add that to my game. I’m glad I did because they make the game look so much better.</p>
 <p><img src="/posts/devblogs/crawl/shadows1.png" alt="image" /></p>
 <p>This definitely looks better, but you might notice something is off. The trees don’t have any shadows! The problem is that the trees are actually just wall tiles, not entities. I first configured the shadows to only draw for entities. Tiles are rendered via a batch system whereas entities are rendered using regular Walgelijk draw commands. At first I almost gave up before even trying because I assumed it would be too messy to get shadows working for both, but it was very easy thanks to Walgelijk being so awesome.</p>

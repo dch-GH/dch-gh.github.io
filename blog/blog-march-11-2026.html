@@ -65,7 +65,7 @@
 	<p class="date italic disabled">Last edited on: nil</p>
 </div><prose><iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/track/3SAY5f8rwd6hLJT8y81YvB?si=5258464b917c4f15?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 <p>I originally wrote this website in raw HTML/JS/CSS, then I rewrote it in a JS framework, then I rewrote it again in another JS framework, and now I've rewritten it again by writing my own static site generator.</p>
-<h1>Reason to Rewrite</h1>
+<h1 id="reason-to-rewrite"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#reason-to-rewrite">#</a>Reason to Rewrite</h1>
 <p>A while back, before I had actually made this website someone suggested I use something like Hugo. I thought it wouldn't fit my needs. I was wrong, it would have been more than adequate. This site can certainly be generated with a fairly simple process.
 I've learned this over the past few days by simply doing it myself.</p>
 <p>I recently saw this video by <a href="https://www.gingerbill.org/">gingerBill</a>:</p>
@@ -81,7 +81,7 @@ but it didn't ruin the game. An unfortunate reality is that code quality of a ga
 <p>What I've noticed is that, when someone has a goal in their heart, they will go through absolute hell to achieve it. The point is, they &quot;Just Did The Thing&quot;. It didn't matter their skill level, they made one of the best selling games of all time because they believed in their goal of making a game, and they passionately <strong>wanted</strong> it.
 At the time of writing, <a href="https://en.wikipedia.org/wiki/List_of_best-selling_video_games">it ranks #7</a> in the list of top selling games. Even when someone doesn't actually know how to code, they've persevered through it and managed to cobble together the best they can do at realizing whatever is in their head into a real thing.
 Imagine what you can do when you actually do know how to code.</p>
-<h2>It's Simple</h2>
+<h2 id="it's-simple"><a class="jumper-h2" aria-hidden="true" tabindex="-1" href="#it's-simple">#</a>It's Simple</h2>
 <p>I'm positive that Bill did not mean YCJDT in any dismissive way whatsoever. I think he did mean to encourage the viewer based on the results of his experience writing his generator. It ended up encouraging me, and so I went back to the video and watched a little closer this time. It's really not a complicated process. Once I realized what was going on,
 it made sense to me. Writing your own generator is doing basically the same work as frameworks, it's all just HTML/CSS/JS at the end of the day, all the way down.</p>
 <p>Your generator is injecting HTML inside other HTML in the right places. In the same way that compiled code is (usually) just machine code which is just binary which is (hopefully) just electrons
@@ -91,7 +91,7 @@ In this case, it was the code responsible for &quot;foreaching&quot; over all th
 <p>Of course there are a couple slightly tricky things you have to work out, but in my experience the entire process was fun. It was something I'd never done before and didn't think I'd ever do.
 I thought it was harder than it is in reality. That's a huge part of YCJDT for me.
 I tend to catastrophize things before they even happen, so it makes sense. I just assume something is this difficult scary black cloud and that I can't do it. That doesn't always have to be the case. You should at least try. You can just do things.</p>
-<h2>The Generator</h2>
+<h2 id="the-generator"><a class="jumper-h2" aria-hidden="true" tabindex="-1" href="#the-generator">#</a>The Generator</h2>
 <p>The specifics of my implementation are not that interesting. Of course I wrote it in <a href="https://odin-lang.org/">Odin</a>🍺, which has firmly cemented itself as my favorite compiled language to use and appears in these blogs quite often. One thing I did differently from Bill is how I handled my Spotify and YouTube embeds.
 They way I've been doing them since I switched to Svelte is something like this:</p>
 <p>Inside some markdown file:</p>
@@ -134,7 +134,7 @@ SPOTIFY_EMBED :: `&lt;iframe src=&quot;https://open.spotify.com/embed/track/{0}?
 </code></pre>
 <p>Note the <code>{0}</code> for where we plop in the track id. If this were still Svelte, every component would be it's own <code>.svelte</code> file in a components folder in the lib folder and it has to be this way because of xyz. Nah, here it can just be a constant string.
 It's doing the same thing at the end of the day.</p>
-<h1>Conclusion</h1>
+<h1 id="conclusion"><a class="jumper-h1" aria-hidden="true" tabindex="-1" href="#conclusion">#</a>Conclusion</h1>
 <p>This was so much fun to work on. Everything is so much simpler. The folder structure is so plain and clean now. I have all the control for how things are done. If I want even more control I could not use the commonmark library and do my own HTML rendering.
 I don't need to, but the options are there for everything. The one downside is that my <code>code</code> blocks weren't working like they were before. I'm unsure if it is a fault of cmark, but code blocks were not being generated with fine detail anymore. Before, with whichever
 Svelte plugin I was using, it would generate spans and tokens properly which lead to more accurate syntax highlighting.</p>
